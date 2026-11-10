@@ -18,9 +18,8 @@ my_set2 = set(my_list2)
 res = []
 
 for num1 in my_set1:
-    for num2 in my_set2:
-        if(num1 == num2):
-            res.append(num1)
-            break
+    if(num1 in my_set2):
+        res.append(num1)
 
 print(f'Count of intersection: {len(res)}\nResult: {res}')
+# change this file
